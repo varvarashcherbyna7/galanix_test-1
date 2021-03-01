@@ -1,0 +1,138 @@
+body {
+    background-color:  rgba(192, 192, 192, 0.3);
+}
+
+.flagsContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.flagContainer {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*======  Ukrainian flag ======*/
+
+.flagContainer .flagContainer-bg__blue {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(26,117,207);
+}
+
+.flagContainer .flagContainer-bg__yellow {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(247,219,23);
+}
+
+/*====== end of Ukrainian flag ======*/
+
+/*====== Japan flag ======*/
+
+.flagJapanContainer {
+    background-color: #ffffff;
+    border: .5px solid rgba(34,34,34, 0.3);
+}
+
+.flagJapanContainer .flagContainer-circle__red {
+    width: 40%;
+    height: 60%;
+    margin: 12% auto;
+    background-color: rgb(190,0,38);
+    border-radius: 50%;
+}
+
+/*====== end of Japan flag ======*/
+
+
+/*====== Iceland flag ======*/
+
+.flagIcelandContainer {
+    position: relative;
+    z-index: -1;
+    background-color: rgb(2,82,156);
+}
+
+.flagIcelandContainer .flagContainer-cross {
+    width: 24px;
+    height: 200px;
+    position: relative;
+    z-index: 0;
+    margin-left: 86px;
+    background: rgb(220, 30, 53);
+    box-sizing: content-box;
+    border-left: 10px solid #ffffff;
+    border-right: 10px solid #ffffff;
+}
+
+.flagIcelandContainer .flagContainer-cross:after {
+    content: "";
+    width: 300px;
+    height: 24px;
+    background: rgb(220, 30, 53);
+    position: absolute;
+    z-index: 2;
+    top: 88px;
+    left: -96px;
+}
+
+.flagIcelandContainer::after {
+    content: "";
+    width: 300px;
+    height: 24px;
+    background: transparent;
+    position: absolute;
+    z-index: -1;
+    top: 78px;
+    border-top: 10px solid #ffffff;
+    border-bottom: 10px solid #ffffff;
+}
+
+/*====== end of Iceland flag ======*/
+
+/*====== Czech Republic flag ======*/
+
+.flagCzechRepublicContainer {
+    position: relative;
+}
+
+.flagCzechRepublicContainer .flagContainer-arrowRight__blue {
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-left: 140px solid rgb(8, 67, 127);
+    border-bottom: 100px solid transparent;
+}
+
+.flagCzechRepublicContainer .flagContainer-quadrangle__white {
+    width: 100%;
+    height: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.flagCzechRepublicContainer .flagContainer-quadrangle__red {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(216,12,19);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/*====== end of Czech Republic flag ======*/
